@@ -1,13 +1,4 @@
-def triangulo_valido(a, b, c):
-    if a <= 0 or b <= 0 or c <= 0:
-        return False
-    if a > (b + c):
-        return False
-    if b > (a + c):
-        return False
-    if c > (a + b):
-        return False
-    return True
+import triangulos as tri
 
 with open("data/lados.txt", "r") as arq:
     linhas = arq.readlines()
@@ -17,7 +8,8 @@ for linha in linhas:
     # convertendo cada parte para float
     for i in range(len(partes)):
         partes[i] = float(partes[i])
-    resposta = triangulo_valido(partes[0], partes[1], partes[2])
+    resposta = tri.triangulo_valido(
+                        partes[0], partes[1], partes[2])
     if resposta:
         respostas.append("SIM")
     else:
