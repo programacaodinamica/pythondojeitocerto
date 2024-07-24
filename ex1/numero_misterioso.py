@@ -1,6 +1,8 @@
-numero = 42
+import random
 
-chute = int(input("Advinhe o valor: "))
+numero = random.randint(0, 1000)
+
+chute = int(input("Advinhe o valor (entre 0 e 1000): "))
 
 while chute != numero:
     if chute > numero:
