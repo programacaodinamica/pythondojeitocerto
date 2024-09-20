@@ -2,3 +2,4 @@
 *.pyc
 draft/*
 mkt/*
+venv/*
