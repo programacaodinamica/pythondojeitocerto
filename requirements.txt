@@ -1,0 +1,7 @@
+certifi==2023.7.22
+cycler==0.11.0
+fonttools==4.42.0
+kiwisolver==1.4.4
+packaging==23.1
+pillow==10.4.0
+python-dateutil==2.8.2
